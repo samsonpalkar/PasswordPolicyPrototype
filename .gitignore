@@ -1,0 +1,18 @@
+# Created by .ignore support plugin (hsz.mobi)
+### CVS template
+/CVS/*
+**/CVS/*
+.cvsignore
+*/.cvsignore
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+*.ipr
+out
+gen
+##Build files
+/build
+target/
