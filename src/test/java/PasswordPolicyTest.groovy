@@ -29,7 +29,7 @@ class PasswordPolicyTest extends Specification {
         RuleResult result =  passwordPolicy.validate(new PasswordData(passwordToValidate))
         if(!result.isValid()) {
             result.details.findAll {
-                System.err.println("The password '$passwordToValidate' is not valid: " + it.toString())
+                System.err.println("The password '$passwordToValidate' is not valid: " + it.errorCode)
             }
         }
         then: "the password is validated"
